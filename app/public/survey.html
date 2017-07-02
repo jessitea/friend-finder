@@ -1,0 +1,261 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Friend Finder- Survey</title>
+
+    <!-- Compiled and minified CSS for Materialize-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.99.0/css/materialize.min.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+
+    <!--Let browser know website is optimized for mobile-->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!-- JQuery CDN -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+
+    <!-- Compiled and minified JavaScript -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.99.0/js/materialize.min.js"></script>
+
+    <!-- Materialize javascript for styling-->
+    <script>
+    $(document).ready(function() {
+    $('select').material_select();
+    });
+    </script>
+
+  </head>
+
+  <body>
+    <div class="container">
+      <div class="row">
+        <!-- Header Card (Materialize)-->
+        <div class="row">
+          <div class="col s12 m12">
+            <div class="card teal lighten-2">
+              <div class="card-content white-text">
+                <span class="card-title">Find A Friend</span>
+                <p>Please answer the following questions below to find a friend</p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <form class="col s12">
+          <!-- Name Field -->
+          <div class="row">
+            <div class="input-field col s12">
+              <i class="large material-icons prefix">perm_identity</i>
+              <i class="fa fa-user-circle-o" aria-hidden="true"></i><input id="name" type="text" class="validate form-control">
+              <label for="name" class="active">Name (required)</label>
+            </div>
+          </div>
+          <!-- Photo Field -->
+          <div class="row">
+            <div class="input-field col s12">
+              <i class="large material-icons prefix">add_a_photo</i>
+              <input id="photo" type="url" class="validate form-control">
+              <label for="photo" class="active" data-error="Please enter a valid url">Photo URL(required)</label>
+            </div>
+          </div>
+              <!-- Question 1 -->
+              <div class="input-field col s12">
+                <select id="q1">
+                  <option value="" disabled selected>Choose your option</option>
+                  <option value="1">1 (disagree) Get out of here.</option>
+                  <option value="2">2</option>
+                  <option value="3">3</option>
+                  <option value="4">4</option>
+                  <option value="5">5 (strongly agree) Yes, especially grilled!</option>
+                </select>
+                <label>Pineapples are the best fruit</label>
+              </div>
+
+              <!-- Question 2 -->          
+              <div class="input-field col s12">
+                <select id="q2">
+                  <option value="" disabled selected>Choose your option</option>
+                  <option value="1">1 (disagree) Math is subjective.</option>
+                  <option value="2">2</option>
+                  <option value="3">3</option>
+                  <option value="4">4</option>
+                  <option value="5">5 (strongly agree) This is a dumb question.</option>
+                </select>
+                <label>2 + 2 = 4</label>
+              </div>
+
+              <!-- Question 3 -->
+              <div class="input-field col s12">
+                <select id="q3">
+                  <option value="" disabled selected>Choose your option</option>
+                  <option value="1">1 (disagree) I need people.</option>
+                  <option value="2">2</option>
+                  <option value="3">3</option>
+                  <option value="4">4</option>
+                  <option value="5">5 (strongly agree) Dancing is good anywhere, anytime.</option>
+                </select>
+                <label>On the weekends, I enjoy solo dance parties.</label>
+              </div>
+
+              <!-- Question 4 -->
+              <div class="input-field col s12">
+                <select id="q4">
+                  <option value="" disabled selected>Choose your option</option>
+                  <option value="1">1 (disagree) You monster, save the animals!</option>
+                  <option value="2">2</option>
+                  <option value="3">3</option>
+                  <option value="4">4</option>
+                  <option value="5">5 (strongly agree) Natural selection, all day, baby.</option>
+                </select>
+                <label>Endangered animals shouldn't receive preferential treatment.</label>
+              </div>
+
+              <!-- Question 5 -->
+              <div class="input-field col s12">
+                <select id="q5">
+                  <option value="" disabled selected>Choose your option</option>
+                  <option value="1">1 (disagree) Hold on, let me use Google.</option>
+                  <option value="2">2</option>
+                  <option value="3">3</option>
+                  <option value="4">4</option>
+                  <option value="5">5 (strongly agree) You should get that checked.</option>
+                </select>
+                <label>I understand this statement: wǒ méi yǒu bí zi.</label>
+              </div>
+
+              <!-- Question 6 -->
+              <div class="input-field col s12">
+                <select id="q6">
+                  <option value="" disabled selected>Choose your option</option>
+                  <option value="1">1 (disagree) WHY?!</option>
+                  <option value="2">2</option>
+                  <option value="3">3</option>
+                  <option value="4">4</option>
+                  <option value="5">5 (strongly agree) Sound quality is really important.</option>
+                </select>
+                <label>I would pay $200 for headphones.</label>
+              </div>
+
+              <!-- Question 7 -->
+              <div class="input-field col s12">
+                <select id="q7">
+                  <option value="" disabled selected>Choose your option</option>
+                  <option value="1">1 (disagree) Meh.</option>
+                  <option value="2">2</option>
+                  <option value="3">3</option>
+                  <option value="4">4</option>
+                  <option value="5">5 (strongly agree) Chyeah!</option>
+                </select>
+                <label>I love to program, I love to code!</label>
+              </div>
+
+              <!-- Question 8 -->
+              <div class="input-field col s12">
+                <select id="q8">
+                  <option value="" disabled selected>Choose your option</option>
+                  <option value="1">1 (disagree) I would pet it.</option>
+                  <option value="2">2</option>
+                  <option value="3">3</option>
+                  <option value="4">4</option>
+                  <option value="5">5 (strongly agree) Um, yes.</option>
+                </select>
+                <label>If I saw a bear while hiking in the woods, I would run.</label>
+              </div>
+
+              <!-- Question 9 -->
+              <div class="input-field col s12">
+                <select id="q9">
+                  <option value="" disabled selected>Choose your option</option>
+                  <option value="1">1 (disagree) No, normal yams are super cool.</option>
+                  <option value="2">2</option>
+                  <option value="3">3</option>
+                  <option value="4">4</option>
+                  <option value="5">5 (strongly agree) They're called ube and I love them.</option>
+                </select>
+                <label>Purple yams are super cool.</label>
+              </div>
+
+              <!-- Question 10 -->
+              <div class="input-field col s12">
+                <select id="q10">
+                  <option value="" disabled selected>Choose your option</option>
+                  <option value="1">1 (disagree) Why would anyone ever do that?</option>
+                  <option value="2">2</option>
+                  <option value="3">3</option>
+                  <option value="4">4</option>
+                  <option value="5">5 (strongly agree) Food is the most beautiful thing.</option>
+                </select>
+                <label>Taking pictures of food is the best.</label>
+              </div>
+
+              <!-- Submit Button -->
+              <div class="row">
+                <button class="submit btn waves-effect waves-light col s12" type="submit" name="newFriend">Submit
+                <i class="material-icons right">send</i>
+                </button>
+              </div>
+              
+              <!-- Link to Friends List array of objects -->
+              <a href="/api/friends">API Friends List</a>
+      </div>
+
+    <!-- Modal for match results (Materialize) -->
+      <div id="modal1" class="modal">
+        <div class="modal-content">
+          <h6>Your Match!</h5>
+          <h5 id="matchName"></h5>
+          <img id="matchImg" height="250">
+        </div>
+              
+        <div class="modal-footer">
+          <a href="#!" class="modal-action modal-close waves-effect waves-green btn-flat">Awesome!</a>
+        </div>
+      </div>
+    
+  </body>
+</html>
+
+<script type="text/javascript">
+
+  $(".submit").on("click", function(event) {
+
+    event.preventDefault();
+
+    // Gets the values from the form and stores it in a variable
+    var newFriend = {
+      name: $("#name").val().trim(),
+      photo: $("#photo").val().trim(),
+      scores: [
+              parseInt($("#q1").val()),
+              parseInt($("#q2").val()),
+              parseInt($("#q3").val()),
+              parseInt($("#q4").val()),
+              parseInt($("#q5").val()),
+              parseInt($("#q6").val()),
+              parseInt($("#q7").val()),
+              parseInt($("#q8").val()),
+              parseInt($("#q9").val()),
+              parseInt($("#q10").val()),
+              ]
+      };
+
+      // console.log(newFriend);
+
+    //posts user's data to server, then retrieves match and opens it in a modal
+    $.post("/api/friends", newFriend,function(data) {
+
+          $('#matchName').html(data.name);
+          $('#matchImg').attr("src", data.photo);
+          $('#modal1').modal('open');
+          // console.log(data);
+
+      });
+
+    //clears form on click using Materialize
+    var select = $('select');
+    $("form input").val("");
+    select.prop('selectedIndex', 0);
+    select.material_select();
+        
+  });
+
+</script>
